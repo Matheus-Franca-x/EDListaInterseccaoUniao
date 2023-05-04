@@ -1,6 +1,6 @@
 package view;
 
-import model.ListaInt;
+import matheus.ListaInt.ListaInt;
 
 public class Main {
 
