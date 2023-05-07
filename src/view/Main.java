@@ -46,7 +46,6 @@ public class Main {
 						I.addFirst(A.get(i));							
 					}
 				}
-				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -55,8 +54,11 @@ public class Main {
 		for (int i = 0; i < (A.size() > B.size() ? A.size() : B.size()); i++)
 		{
 			try {
-				U.addFirst(A.get(i));
-				if (A.size() > B.size() ? i < B.size() : i < A.size())
+				if(i < A.size())
+				{
+					U.addFirst(A.get(i));					
+				}
+				if (i < B.size())
 				{
 					U.addFirst(B.get(i));
 				}
